@@ -29,6 +29,7 @@ public class BancoService {
 		return repo.save(obj);
 	}
 
+	//operação de busca da conta bancária pelo id correspondente a conta
 	public Banco update(Banco obj) {
 		Optional<Banco> banco = repo.findById(obj.getId());
 		find(obj.getId());
